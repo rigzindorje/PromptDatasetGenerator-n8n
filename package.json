@@ -11,10 +11,10 @@
 		"ai-gateway"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/your-org/n8n-nodes-prompt-dataset-generator",
+	"homepage": "https://github.com/rigzindorje/PromptDatasetGenerator-n8n",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/your-org/n8n-nodes-prompt-dataset-generator.git"
+		"url": "git+https://github.com/rigzindorje/PromptDatasetGenerator-n8n.git"
 	},
 	"engines": {
 		"node": ">=18.10",
