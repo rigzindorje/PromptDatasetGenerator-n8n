@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "es2019",
+        "lib": [
+            "es2019",
+            "es2020.promise",
+            "es2020.string",
+            "es2020.symbol.wellknown"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "rootDir": "./",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "inlineSourceMap": true,
+        "esModuleInterop": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "credentials/**/*",
+        "nodes/**/*"
+    ],
+    "exclude": [
+        "dist",
+        "**/*.test.ts",
+        "node_modules"
+    ]
+}
