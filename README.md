@@ -6,7 +6,7 @@ A community node for n8n that automatically generates prompt datasets from exist
 
 - 🤖 **Auto-describe workflows** - Automatically analyzes workflow JSON to understand LLM nodes, tools, and data flow
 - 📊 **Multiple prompt styles** - Generate baseline, edge-cases, paraphrases, format-strict, and adversarial prompts
-- 🔌 **AI Gateway integration** - Uses Ostinato/Outshift AI Gateway for intelligent prompt generation
+- 🔌 **AI Gateway integration** - Uses an OpenAI-compatible AI Gateway for intelligent prompt generation
 - 📋 **Data Table integration** - Directly inserts datasets into n8n Data Tables for immediate use
 - ⚡ **Batch processing** - Handles large datasets with automatic chunking and rate limiting
 - 🔒 **Secure credentials** - All API keys and tokens stored securely in n8n credentials
@@ -25,7 +25,7 @@ npm install n8n-nodes-prompt-dataset-generator
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-org/n8n-nodes-prompt-dataset-generator.git
+   git clone https://github.com/rigzindorje/PromptDatasetGenerator-n8n.git
    cd n8n-nodes-prompt-dataset-generator
    ```
 
@@ -56,7 +56,7 @@ npm install n8n-nodes-prompt-dataset-generator
 
 Create an **AI Gateway API** credential with:
 
-- **App Endpoint**: `https://ai-gateway.outshift.ai/api/v1/llm-bridge/your-connection-id`
+- **App Endpoint**: `https://your-gateway-host/api/v1/llm-bridge/your-connection-id`
   - ⚠️ Do NOT include `/chat/completions` suffix - the node will append it automatically
 - **API Key**: Your JWT token from the AI Gateway
 - **Timeout (ms)**: Request timeout (default: 60000)
@@ -146,7 +146,7 @@ Common constraints:
 
 The node uses a provider-agnostic architecture:
 
-1. **AI Gateway** (default): Ostinato/Outshift AI Gateway
+1. **AI Gateway** (default): Any OpenAI-compatible AI Gateway
 2. **External API** (future): Direct PromptGen API integration
 3. **Local Fallback** (dev): Synthetic data for testing
 
@@ -252,9 +252,9 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- 🐛 **Issues**: [GitHub Issues](https://github.com/your-org/n8n-nodes-prompt-dataset-generator/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/your-org/n8n-nodes-prompt-dataset-generator/discussions)
-- 📚 **Documentation**: [Wiki](https://github.com/your-org/n8n-nodes-prompt-dataset-generator/wiki)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/rigzindorje/PromptDatasetGenerator-n8n/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/rigzindorje/PromptDatasetGenerator-n8n/discussions)
+- 📚 **Documentation**: [Wiki](https://github.com/rigzindorje/PromptDatasetGenerator-n8n/wiki)
 
 ---
 

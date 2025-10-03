@@ -134,7 +134,7 @@ export class PromptDatasetGenerator implements INodeType {
 							{
 								name: 'AI Gateway',
 								value: 'aiGateway',
-								description: 'Use Ostinato/Outshift AI Gateway',
+								description: 'Use AI Gateway (OpenAI-compatible)',
 							},
 							{
 								name: 'Local Fallback (Dev Only)',

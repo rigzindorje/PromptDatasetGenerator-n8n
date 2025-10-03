@@ -25,7 +25,7 @@ interface ChatCompletionResponse {
 
 /**
  * AI Gateway provider for generating prompt datasets
- * Integrates with Ostinato/Outshift AI Gateway Chat Completions endpoint
+ * Integrates with any OpenAI-compatible AI Gateway Chat Completions endpoint
  */
 export class AIGatewayProvider implements IGenerator {
 	private readonly config: AIGatewayCfg;

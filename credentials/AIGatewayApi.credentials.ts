@@ -10,7 +10,7 @@ export class AIGatewayApi implements ICredentialType {
 
 	displayName = 'AI Gateway API';
 
-	documentationUrl = 'https://docs.outshift.ai/ai-gateway';
+	documentationUrl = '';
 
 	properties: INodeProperties[] = [
 		{
@@ -18,7 +18,7 @@ export class AIGatewayApi implements ICredentialType {
 			name: 'appEndpoint',
 			type: 'string',
 			default: '',
-			placeholder: 'https://ai-gateway.outshift.ai/api/v1/llm-bridge/your-connection-id',
+			placeholder: 'https://your-gateway-host/api/v1/llm-bridge/your-connection-id',
 			description:
 				'The AI Gateway LLM Bridge endpoint URL. Do not include /chat/completions suffix.',
 			required: true,
